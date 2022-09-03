@@ -1,0 +1,64 @@
+.backdrop
+{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top:0;
+    background-color:rgba(0, 0, 0, 0.2);
+    transition: 
+    opacity var(--animation-rule), 
+    visibility var(--animation-rule);
+}
+
+.modal{
+    padding: 40px;
+    position: absolute;
+    width: 528px;
+    height: 581px;
+    min-height: 581px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%) scale(1);
+    background-color: var(--wighte-color);
+    box-shadow: 
+    0px 1px 3px rgba(0, 0, 0, 0.12), 
+    0px 1px 1px rgba(0, 0, 0, 0.14), 
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transition: transform var(--animation-rule);
+    .backdrop.is-hidden &
+    {transform: translate(-50%, -50%) scale(0);}
+}
+
+
+.modal-close{
+position: absolute;
+display: flex;
+width: 30px;
+height: 30px;
+background-color: transparent;
+border: 1px solid rgba(0, 0, 0, 0.1);
+border-radius:50%;
+top: 9px;
+right: 9px;
+transition: fill var(--animation-rule);
+&:hover, &:focus
+    { fill: var(--accent-text-color);}
+&-icon{
+        align-self: center;
+        align-items: center;
+    }   
+}
+
+.modal-title
+{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+    margin-bottom: 12px;
+}
+
+

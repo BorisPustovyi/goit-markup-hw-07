@@ -1,0 +1,126 @@
+.footer {
+    background-color: var(--hero-and-footer-background-color);
+    padding-top:61px;
+    padding-bottom: 60px;
+}
+
+.container .footer-continer{display: flex;}
+.footer-container{display: flex;}
+
+
+
+.footer__logo{
+    margin-right: 0px;
+    margin-bottom: 20px;
+    display: block;
+    &--wighte{
+        color:var(--wighte-color);}}
+
+.footer__contacts-wrap{margin-right:70px;}
+
+.contacts__item {
+font-style:normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+&:not(:first-child) {margin-top: 9px;}
+}
+
+
+.contacts__map, .contacts__mail, .contacts__tel{ 
+    color:var(--wighte-color);
+    transition: color var(--animation-rule);
+    &:hover, &:focus
+    {color:var(--accent-text-color)}
+}
+
+.footer__social-wrap{
+    width: 206px;
+    height: 80px;
+    margin-right: 93px;
+}
+
+.footer__social
+{
+    display: flex;
+    gap:10px;
+}
+
+.social__link{
+    width: 44px;
+    height: 44px;
+    border-radius:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: var(--wighte-color);
+    background-color:var(--icon-footer-background-color);
+    transition: background-color var(--animation-rule);
+    &:hover, &:focus {    
+        background-color:  var(--accent-text-color);
+        outline: none;}
+}
+
+.invitation{
+    font-size: 14px;
+    line-height:1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--wighte-color);
+    margin-bottom: 20px;
+}
+.footer__subscrube-us{display:flex}
+.subscribe__title
+{   
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height:1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--wighte-color);
+}
+
+.subscribe__input{
+    background-color: transparent;
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    margin-right: 12px;
+    padding-left: 16px;
+    color:var(--contacts-color);
+    &::placeholder{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.25;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.03em;
+        color:var(--contacts-color)
+        }}
+
+.subscribe__btn
+{
+cursor: pointer;
+width: 200px;
+height: 50px;
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.88;  
+letter-spacing: 0.06em;
+padding: 10px 28px;
+border: none;
+color: var(--wighte-color);
+background-color:var(--accent-text-color);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+display: inline-flex;
+gap: 10px;
+align-items: center;
+align-self: center;
+justify-content: center;
+}
