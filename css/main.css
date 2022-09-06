@@ -251,8 +251,8 @@ img {
 .navigation__link {
   color: var(--title-text-color);
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.02em;
   -webkit-transition: color var(--animation-rule);
   transition: color var(--animation-rule);
@@ -417,18 +417,18 @@ img {
   letter-spacing: 0.03em;
 }
 
-.gallery-list {
+.gallery {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
 }
 
-.gallery-item {
+.gallery__item {
   position: relative;
 }
 
-.gallery-item-text {
+.gallery__text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
